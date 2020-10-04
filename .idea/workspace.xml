@@ -20,8 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06147d58-ab98-4c07-a2c6-f7d700eb4e2d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/enforcement_camera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target_number.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/printer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/prepare_coding_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prepare_coding_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -52,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d93b66dd-c572-4e18-939a-e8e428771e53" />
+  <component name="JupyterTrust" id="d7a7362e-8e91-48f0-aa25-62e246c89eb9" />
   <component name="ProjectId" id="1i8ffsaQxFTjuHFt8NVMxf5GBtj" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -65,31 +64,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
-  <component name="RunManager" selected="Python.target_number">
-    <configuration name="bigest_num" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="prepare_coding_test" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bigest_num.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.printer">
     <configuration name="enforcement_camera" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="prepare_coding_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,6 +133,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="printer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="prepare_coding_test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/printer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="target_number" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="prepare_coding_test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -180,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.printer" />
         <item itemvalue="Python.target_number" />
         <item itemvalue="Python.enforcement_camera" />
         <item itemvalue="Python.pactice_test" />
         <item itemvalue="Python.gym_cloth" />
-        <item itemvalue="Python.bigest_num" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +196,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601294245350</updated>
       <workItem from="1601294246431" duration="28072000" />
+      <workItem from="1601810634257" duration="8784000" />
     </task>
     <servers />
   </component>
@@ -220,40 +220,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1601781005420" />
-    <state width="1877" height="415" key="GridCell.Tab.0.bottom" timestamp="1601805037565">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1601821638849">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="415" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1601805037565" />
     <state width="798" height="312" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1601641054769" />
-    <state width="1877" height="415" key="GridCell.Tab.0.center" timestamp="1601805037565">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601815764311" />
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601821638849" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1601821638849">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="415" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1601805037565" />
     <state width="798" height="312" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1601641054769" />
-    <state width="1877" height="415" key="GridCell.Tab.0.left" timestamp="1601805037565">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="914" height="281" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601815764311" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601821638849" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1601821638849">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="415" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1601805037565" />
     <state width="798" height="312" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1601641054768" />
-    <state width="1877" height="415" key="GridCell.Tab.0.right" timestamp="1601805037565">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="914" height="281" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601815764311" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601821638849" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1601821638849">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="415" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1601805037565" />
     <state width="798" height="312" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1601641054769" />
-    <state x="781" y="154" key="SettingsEditor" timestamp="1601781030438">
+    <state width="914" height="281" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601815764311" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1601821638849" />
+    <state x="781" y="154" key="SettingsEditor" timestamp="1601813936941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="781" y="154" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1601781030438" />
     <state x="683" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1601295278687" />
+    <state x="781" y="154" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601813936941" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/prepare_coding_test$bigest_num.coverage" NAME="bigest_num Coverage Results" MODIFIED="1601369946944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/prepare_coding_test$enforcement_camera.coverage" NAME="enforcement_camera Coverage Results" MODIFIED="1601784581065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/prepare_coding_test$gym_cloth.coverage" NAME="gym_cloth Coverage Results" MODIFIED="1601614618601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/prepare_coding_test$.coverage" NAME="이윤석병신 Coverage Results" MODIFIED="1601370858101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/prepare_coding_test$make_bigest_num.coverage" NAME="pactice_test Coverage Results" MODIFIED="1601641054762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prepare_coding_test$enforcement_camera.coverage" NAME="enforcement_camera Coverage Results" MODIFIED="1601784581065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/prepare_coding_test$kth_number.coverage" NAME="kth_number Coverage Results" MODIFIED="1601351007973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/prepare_coding_test$spy_disguisement.coverage" NAME="spy_disguisement Coverage Results" MODIFIED="1601300026031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/prepare_coding_test$target_number.coverage" NAME="target_number Coverage Results" MODIFIED="1601805037552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prepare_coding_test$printer.coverage" NAME="printer Coverage Results" MODIFIED="1601821141020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prepare_coding_test$gym_cloth.coverage" NAME="gym_cloth Coverage Results" MODIFIED="1601614618601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/prepare_coding_test$make_bigest_num.coverage" NAME="pactice_test Coverage Results" MODIFIED="1601641054762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

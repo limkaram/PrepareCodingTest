@@ -33,3 +33,4 @@ for move in movement:
             j += 1
 
 print(i, j)
+
